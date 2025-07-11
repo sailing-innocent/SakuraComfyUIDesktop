@@ -6,12 +6,6 @@ Diagnostics:
     - pragma_attribute_no_pop_eof
     - pragma_attribute_stack_mismatch
 
----
-
-If:
-  PathMatch: tools/.*/.*
-CompileFlags:
-  CompilationDatabase: .sb/compile_commands/tools/
 
 ---
 
@@ -20,24 +14,47 @@ If:
 CompileFlags:
   CompilationDatabase: .sb/compile_commands/modules/
 
+
 ---
 
 If:
-  PathMatch: samples/.*/.*
+  PathMatch: apps/.*/.*
+CompileFlags:
+  CompilationDatabase: .sb/compile_commands/modules/
+
+
+---
+
+If:
+  PathMatch: engine/SakuraEngine/tools/.*/.*
+CompileFlags:
+  CompilationDatabase: .sb/compile_commands/tools/
+
+---
+
+If:
+  PathMatch: engine/SakuraEngine/modules/.*/.*
 CompileFlags:
   CompilationDatabase: .sb/compile_commands/modules/
 
 ---
 
 If:
-  PathMatch: tests/.*/.*
+  PathMatch: engine/SakuraEngine/samples/.*/.*
 CompileFlags:
   CompilationDatabase: .sb/compile_commands/modules/
 
 ---
 
 If:
-  PathMatch: thirdparty/.*/.*
+  PathMatch: engine/SakuraEngine/tests/.*/.*
+CompileFlags:
+  CompilationDatabase: .sb/compile_commands/modules/
+
+---
+
+If:
+  PathMatch: engine/SakuraEngine/thirdparty/.*/.*
 CompileFlags:
   CompilationDatabase: .sb/compile_commands/modules/
 

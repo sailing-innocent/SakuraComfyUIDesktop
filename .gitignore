@@ -78,3 +78,6 @@ scenes
 .history
 xmake.log
 -.json
+
+*.vcxproj
+*.vcxproj.filters
