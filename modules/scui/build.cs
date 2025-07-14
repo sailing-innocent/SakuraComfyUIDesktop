@@ -10,6 +10,9 @@ public static class SCUI
         Engine.Module("SCUIRuntime", "SCUI_RUNTIME")
             .Depend(Visibility.Public, "SkrImGui")
             .IncludeDirs(Visibility.Public, "include")
-            .AddCppFiles("src/*.cpp");
+            .AddCppFiles("src/*.cpp")
+            .AddMetaHeaders(
+                "include/SCUI/element.h"
+            );
     }
 }

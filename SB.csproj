@@ -23,6 +23,8 @@
     <EmbeddedResource Remove="**/**" />
     <None Remove="**/**" />
     <None Remove="**" />
+    
+    <Compile Include="xrepo/**/build.cs" />
     <Compile Include="modules/**/build.cs" />
     <Compile Include="apps/**/build.cs" />
 	  <Compile Include="runbuild.cs" />
